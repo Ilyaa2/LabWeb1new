@@ -1,0 +1,139 @@
+header {
+  font-family: 'Roboto', sans-serif;
+  text-align: end;
+  width: 100%;
+  background-color: rgb(255, 255, 4);
+  color: rgb(137, 3, 255);
+  font-size: 20px;
+}
+
+/* наследование шрифта */
+
+
+/* НЕту селекторов дочерних элементов */
+
+
+.wrapper{
+  background-color: antiquewhite;
+  padding-bottom: 100px;
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;  
+  /* background-color: rgb(255, 255, 4); */
+}
+
+header .name {
+  font-size: 30px;
+}
+
+header .name::first-letter {
+  background: rgb(165, 40, 40);
+  display: inline-block;
+}
+
+.metainf {
+  font-weight: bold;
+  background: rgb(165, 40, 40);
+  color: #FFF;
+  mix-blend-mode: multiply;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.image{
+  margin: 0 auto;
+  display: block; 
+}
+
+div > h1{
+  font-style: italic;
+  font-size: 30px;
+  color:rgb(40, 165, 98);
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+button{
+  margin: 0 2%;
+  width: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: aqua; 
+  font-size: 23px;
+}
+
+.block_values{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+
+  width:700px;
+  height: 240px;
+}
+
+.elem{
+  margin-left: 2%;
+  font-size: 23px;
+}
+
+.values{
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+  justify-content: space-between;
+}
+
+.input_text{
+  margin: 0 2%;
+  width: 100%;
+  font-size: 23px;
+}
+
+.radio{
+  margin: 0 2%;
+  width: 50px;
+  font-size: 23px;
+}
+
+button:active{
+  box-shadow: 0 0 30px rgb(176, 16, 16);
+}
+
+button.submit{
+  display: inline-block;
+  margin: 0 42%;
+  margin-top: 3%;
+  width: 120px;
+  height: 35px;
+}
+
+/* #specialContent{
+  display: none;
+} */
+
+table{
+  margin: 0 auto;  
+  margin-top: 40px;
+  border: 1px solid black;
+}
+tr,td{
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 23px;
+}
+.green{
+  background-color: rgb(106, 206, 106);
+}
+
+.red{
+  background-color: rgb(244, 81, 81);
+}
+
+

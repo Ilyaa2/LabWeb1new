@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="resourses/icon-money.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Graph</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <div class="name">
+          Загородников Илья
+        </div>
+        <div class="metainf">
+          P32121<br>
+          Вариант №1705
+        </div>
+      </header>
+      <h1>Выберите значения, чтобы узнать попадает ли точка в область фигуры</h1>
+      <img src="resourses/graph.jpg" alt="graph" class="image">
+      <form class="block_values">
+        <div class="values">
+          <div class="elem">X:</div>
+          <button type="button" value="-5" onclick="enterX('-5')">-5</button>
+          <button type="button" value="-4" onclick="enterX('-4')">-4</button>
+          <button type="button" value="-3" onclick="enterX('-3')">-3</button>
+          <button type="button" value="-2" onclick="enterX('-2')">-2</button>
+          <button type="button" value="-1" onclick="enterX('-1')">-1</button>
+          <button type="button" value="0" onclick="enterX('0')">0</button>
+          <button type="button" value="1" onclick="enterX('1')">1</button>
+          <button type="button" value="2" onclick="enterX('2')">2</button>
+          <button type="button" value="3" onclick="enterX('3')">3</button>
+          <input name="btn" type="text" id="hidden_elem" style="display: none;">
+        </div>
+        <div class="values">
+          <div class="elem">Y:</div>
+          <input type="text" class="input_text" name="text" required onkeyup="enterY(this.value)">
+        </div>
+        <input name="txt" type="text" style="display: none;">
+        <div class="values">
+          <div class="elem">R:</div>
+          <div class="radio">
+            1<input type="radio" name="radiobutton" value="1" onclick="enterR(this.value)">
+          </div>
+          <div class="radio">
+            2<input type="radio" name="radiobutton" value="2" onclick="enterR(this.value)">
+          </div>
+          <div class="radio">
+            3<input type="radio" name="radiobutton" value="3" onclick="enterR(this.value)">
+          </div>
+          <div class="radio">
+            4<input type="radio" name="radiobutton" value="4" onclick="enterR(this.value)">
+          </div>
+          <div class="radio">
+            5<input type="radio" name="radiobutton" value="5" onclick="enterR(this.value)">
+          </div>
+          <input name="rbtn" type="text" style="display: none;">
+        </div>
+        
+      </form>
+      <button type="submit" class="submit" id="click">Отправить</button>
+    </div>
+      <div id="info"></div>
+      <div id="time" style="text-align: center;"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+  <script src="JSscripts/load.js"></script>
+  <script>
+    window.onload = load();
+  </script>
+  <script src="JSscripts/script.js"></script>
+</body>
+
+</html>
